@@ -69,7 +69,8 @@ function selectTile() {
             title: 'GAME OVER!',
             text: `Your final score is ${score}.`,
             icon: 'error',
-            confirmButtonText: 'Play Again'
+            confirmButtonText: 'Play Again',
+            backdrop: false 
         }).then((result) => {
             if (result.isConfirmed) {
 
