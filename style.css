@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #663711;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: url("./img/mario-bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+h1 {
+    font-size: 5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+#board {
+    width: 80vw;
+    max-width: 540px;
+    height: 80vw;
+    max-height: 540px;
+    background: url("./img/soil.png");
+    background-size: cover;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid #fff;
+    border-radius: 25px;
+}
+
+#board div {
+    width: 33.33%;
+    height: 33.33%;
+    background-image: url("./img/pipe.png");
+    background-size: cover;
+}
+
+#board div img {
+    width: 20vw;
+    max-width: 100px;
+    height: auto;
+
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    #board {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    #board div img {
+        width: 15vw;
+    }
+}
+
+@media (max-width: 414px) {
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+
+    #board {
+        width: 95vw;
+        height: 95vw;
+    }
+
+    #board div img {
+        width: 12vw;
+    }
+}
+
+@media (max-width: 320px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
